@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roval Group - Car Rental & Driver Hire Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">RG</span>
+                <span class="logo-text">imigongo<span class="logo-accent"> motor GROUP</span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#drivers">Drivers</a></li>
+                    <li><a href="#request">Request</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Car Rental & Professional Driver Services</h1>
+            <p>Experience comfort, reliability, and professionalism with Royal Group. We provide vehicles and professional drivers for all occasions and budgets.</p>
+            <a href="#request" class="btn">Request a Service</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of vehicles and driver services to meet all your transportation needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Economy Car Rental</h3>
+                        <p>Affordable and fuel-efficient cars for everyday use. Perfect for city driving and short trips.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Premium Car Rental</h3>
+                        <p>Luxury vehicles for business meetings, special occasions, or when you want to travel in style.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-suv"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>SUV & Family Vehicles</h3>
+                        <p>Spacious vehicles perfect for family trips, group travel, or when you need extra cargo space.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Commercial Vehicles</h3>
+                        <p>Vans and trucks available for business use, moving, or transporting goods.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Driver Hire Services</h3>
+                        <p>Professional drivers for all license categories. Hourly, daily, or long-term arrangements available.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Airport Transfers</h3>
+                        <p>Reliable airport pickup and drop-off services with flight monitoring for timely service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet" id="fleet">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Vehicle Fleet</h2>
+                <p>Choose from our diverse fleet of well-maintained vehicles for every need and budget.</p>
+            </div>
+            <div class="fleet-filters">
+                <button class="filter-btn active" data-filter="all">All Vehicles</button>
+                <button class="filter-btn" data-filter="economy">Economy</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+                <button class="filter-btn" data-filter="suv">SUV & Family</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+            <div class="fleet-grid" id="fleetGrid">
+                <!-- Vehicles will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Drivers Section -->
+    <section class="drivers" id="drivers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Driver Hire Services</h2>
+                <p>We provide professional drivers for all license categories and vehicle types.</p>
+            </div>
+            <div class="drivers-grid">
+                <div class="driver-card">
+                    <div class="driver-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="driver-content">
+                        <h3>Category B Drivers</h3>
+                        <p>Drivers licensed for standard passenger vehicles. Perfect for sedans, hatchbacks, and small SUVs.</p>
+                        <p class="driver-price">From rwf 15,000/day</p>
+                    </div>
+                </div>
+                <div class="driver-card">
+                    <div class="driver-icon">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <div class="driver-content">
+                        <h3>Category C Drivers</h3>
+                        <p>Licensed for larger vehicles like vans and small trucks. Ideal for commercial and group transport.</p>
+                        <p class="driver-price">From rwf 20,000/day</p>
+                    </div>
+                </div>
+                <div class="driver-card">
+                    <div class="driver-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="driver-content">
+                        <h3>Category D Drivers</h3>
+                        <p>Licensed for buses and large passenger vehicles. Perfect for tour groups and events.</p>
+                        <p class="driver-price">From rwf 25,000/day</p>
+                    </div>
+                </div>
+                <div class="driver-card">
+                    <div class="driver-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="driver-content">
+                        <h3>Executive Drivers</h3>
+                        <p>Professional drivers with extensive experience, trained in customer service and discretion.</p>
+                        <p class="driver-price">From rwf 30,000/day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Section -->
+    <section class="request" id="request">
+        <div class="container">
+            <div class="section-title">
+                <h2>Request a Service</h2>
+                <p>Get in touch with us for car rental or driver services.</p>
+            </div>
+            <div class="form-container">
+                <form id="serviceRequestForm">
+                    <div class="form-group">
+                        <label for="serviceType">Service Type</label>
+                        <select id="serviceType" class="form-control" required>
+                            <option value="">Select a Service</option>
+                            <option value="car-rental">Car Rental</option>
+                            <option value="driver-hire">Driver Hire</option>
+                            <option value="both">Car Rental with Driver</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicleType">Preferred Vehicle Type (if applicable)</label>
+                        <select id="vehicleType" class="form-control">
+                            <option value="">Select Vehicle Type</option>
+                            <option value="economy">Economy Car</option>
+                            <option value="premium">Premium Car</option>
+                            <option value="suv">SUV/Family Vehicle</option>
+                            <option value="commercial">Commercial Vehicle</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="driverCategory">Driver License Category Needed (if applicable)</label>
+                        <select id="driverCategory" class="form-control">
+                            <option value="">Select Driver Category</option>
+                            <option value="B">Category B (Standard Vehicles)</option>
+                            <option value="C">Category C (Vans/Trucks)</option>
+                            <option value="D">Category D (Buses)</option>
+                            <option value="executive">Executive Driver</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Please provide details about your request (dates, duration, specific requirements)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>imigongo motor Group</h3>
+                    <p>PROFESSIONALISM AND TRUST</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p>+250 790 666 459</p>
+                                <p>078 152 6617</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p><a href="mailto:g.gwiza@alustudent.com">g.gwiza@alustudent.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <p><a href="https://www.instagram.com/rovalgroup_?igsh=YzczMzQzdmtnOXlz">@rovalgroup_</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#drivers">Drivers</a></li>
+                        <li><a href="#request">Request a Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Operating Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+                    <p>Saturday: 9:00 AM - 8:00 PM</p>
+                    <p>Sunday: 10:00 AM - 6:00 PM</p>
+                    <p>24/7 Emergency Service Available</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 imigongo motor Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
