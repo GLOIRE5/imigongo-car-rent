@@ -1,5 +1,5 @@
-// API Base URL
-const API_BASE_URL = window.location.origin;
+// API Base URL - Use your Render backend URL
+const API_BASE_URL = 'https://imigongo-car-rent-4.onrender.com';
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -49,7 +49,7 @@ document.getElementById('serviceRequestForm').addEventListener('submit', functio
     submitBtn.textContent = 'Submitting...';
     submitBtn.disabled = true;
     
-    // Submit to backend API
+    // Submit to backend API - Now using your Render URL
     fetch(`${API_BASE_URL}/api/service-request`, {
         method: 'POST',
         headers: {
@@ -84,6 +84,7 @@ function loadVehicles(category = 'all') {
         </div>
     `;
     
+    // Now using your Render backend URL
     fetch(`${API_BASE_URL}/api/vehicles?category=${category}`)
         .then(response => {
             if (!response.ok) {
